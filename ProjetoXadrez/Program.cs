@@ -39,8 +39,8 @@ namespace ProjetoXadrez
                         Console.ReadLine();
                     }
                 }
-
-                Tela.imprimirTabuleiro(partida.tab);
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
             }
             catch (TabException e)
