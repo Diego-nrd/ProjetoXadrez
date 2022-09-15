@@ -3,7 +3,7 @@ namespace tabuleiro
 {
     class Tabuleiro
     {
-        public int linhas { get; set; }
+        public int Linhas { get; set; }
         public int Colunas { get; set; }
         private Peca[,] pecas;
 
@@ -14,7 +14,7 @@ namespace tabuleiro
 
         public Tabuleiro(int linhas, int colunas)
         {
-            this.linhas = linhas;
+            Linhas = linhas;
             Colunas = colunas;
             pecas = new Peca[linhas, colunas];
         }
@@ -59,7 +59,7 @@ namespace tabuleiro
 
         public bool posicaoValida(Posicao pos)
         {
-            if (pos.Linha < 0 || pos.Linha >= linhas || pos.Coluna < 0 || pos.Coluna >= Colunas)
+            if (pos.Linha < 0 || pos.Linha >= Linhas || pos.Coluna < 0 || pos.Coluna >= Colunas)
             {
                 return false;
             }

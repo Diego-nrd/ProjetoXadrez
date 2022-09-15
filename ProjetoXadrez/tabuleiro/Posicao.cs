@@ -15,6 +15,13 @@
             Coluna = coluna;
         }
 
+        public void definiValores(int linha, int coluna)
+        {
+            Linha = linha;
+            Coluna = coluna;
+
+        }
+
         public override string ToString()
         {
             return Linha + ", " + Coluna;
